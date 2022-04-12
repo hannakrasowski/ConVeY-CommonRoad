@@ -1,4 +1,5 @@
-commonroad-io>=2021.1
+commonroad-io==2021.1
+commonroad-drivability-checker==2021.4.1 
 tqdm~=4.50.2
 networkx>=2.4
 ipywidgets~=7.5.1
