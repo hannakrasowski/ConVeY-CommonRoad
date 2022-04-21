@@ -1,6 +1,6 @@
 # CommonRoad Search: Search-based Motion Planner with Motion Primitives
 
-This is a programming exercise of the lecture **Techniques in Artificial Intelligence (IN2062)** delivered at the Department of Informatics, TUM. The task in this exercise is to implement a heuristic function and/or a search algorithm with motion primitives to solve [CommonRoad](https://commonroad.in.tum.de/) scenarios. The following search algorithms have been implemented as examples:
+This is based on the programing exercise of the lecture **Techniques in Artificial Intelligence (IN2062)** delivered at the Department of Informatics, TUM. The task in this exercise is to implement a heuristic function and/or a search algorithm with motion primitives to solve [CommonRoad](https://commonroad.in.tum.de/) scenarios. The following search algorithms have been implemented as examples:
 - Breadth First Search
 - Depth First Search
 - Depth-limited Search
@@ -8,12 +8,16 @@ This is a programming exercise of the lecture **Techniques in Artificial Intelli
 - Greedy Best First Search
 - A* Search
 
-The code is written in Python 3.7 and has been tested on Ubuntu 18.04. As the first step, clone this repository with:
+The code is written in Python 3.7 and has been tested on Ubuntu 18.04. **The original repository can be cloned with:**
 
 ```sh
 $ git clone https://gitlab.lrz.de/tum-cps/commonroad-search.git
 ```
-## Ways to run
+For an easy start we created a binder image:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hannakrasowski/ConVeY-CommonRoad/HEAD?labpath=tutorials%2F0_commonroad_input-output%2Ftutorial_commonroad_input-output.ipynb)
+
+## Ways to install locally
 
 You can either run the code locally, in a virtual machine, or in a docker container.
 
@@ -69,54 +73,8 @@ $ sudo apt-get install imagemagick imagemagick-doc -y
 $ brew install imagemagick
 ```
 
-### CommonRoad Route Planner
-
-The [CommonRoad Route Planner](https://gitlab.lrz.de/tum-cps/commonroad-route-planner) package provides functionalities of planning high level routes and generating reference paths leading to goal regions. It can be simply installed with the following commands:
-
-```sh
-$ git clone https://gitlab.lrz.de/tum-cps/commonroad-route-planner.git
-$ cd commonroad-route-planner
-$ pip install .
-```
-
-### CommonRoad Drivability Checker
-
-The [CommonRoad Drivability Checker](https://commonroad.in.tum.de/drivability-checker) provides functionalities such as collision checks, kinematic feasibility checks, road boundary checks, etc. After cloning the package, you can choose to install it either with script installation or manual installation:
-
-```sh
-$ git clone https://gitlab.lrz.de/tum-cps/commonroad-drivability-checker.git
-$ cd commonroad-drivability-checker
-```
-
-#### Script Installation
-
-```sh
-# Ubuntu
-$ bash build.sh -w -i
-
-# MacOS
-$ brew install cmake eigen boost libomp
-$ ./build.sh -w -i
-```
-
-#### Manual Installation
-
-```sh
-# Ubuntu
-$ sudo apt-get install libboost-dev libboost-thread-dev libboost-test-dev libboost-filesystem-dev libeigen3-dev
-$ git submodule update --init
-$ pip install -v . --use-feature=in-tree-build
-
-# MacOS
-$ brew install cmake eigen boost libomp
-$ git submodule update --init
-$ pip install -v . --use-feature=in-tree-build
-```
-
 
 ## Getting Started
-
-Full description of the exercise is provided in `exercise_guide.pdf`. 
 
 To proceed with the tutorials, open a terminal in `commonroad-search/` folder, and launch Jupyter Notebook kernel with:
 
@@ -131,6 +89,7 @@ If you are new here, it's worth to take a look at the following tools:
 - [Jupyter Notebook](): an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. An introduction can be found [here](https://realpython.com/jupyter-notebook-introduction/).
 - [PyCharm](https://www.jetbrains.com/pycharm/): one of the best Python IDEs on the market. It is free for students. A tutorial video can be seen [here](https://www.youtube.com/watch?v=56bPIGf4us0&list=PLX4nwNAsU8OJUuLvmUvxpg-bdPqYVODGU).
 - [GitKraken](https://www.gitkraken.com/): a powerful and elegant multi-platform graphical interface for Git, as an alternative to the command line. It is free for students (with GitHub account). An introduction to GitKraken can be found [here](https://www.youtube.com/c/Gitkraken/playlists).
+
 ## Questions & Answers 
 
 If you encountered any problem, please raise it in the [CommonRoad Forum](https://commonroad.in.tum.de/forum/) so that other students can also benefit from the answers to your questions.
