@@ -15,7 +15,7 @@ $ git clone https://gitlab.lrz.de/tum-cps/commonroad-search.git
 ```
 For an easy start we created a binder image:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hannakrasowski/ConVeY-CommonRoad/HEAD?labpath=tutorials%2F0_commonroad_input-output%2Ftutorial_commonroad_input-output.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hannakrasowski/ConVeY-CommonRoad/main)
 
 ## Ways to install locally
 
